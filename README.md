@@ -86,15 +86,21 @@ flowchart TD
 ```
 
 <h3 id="tasks-overview">Tasks Overview</h3>
+
 [ ] Design Entities and ERD
-
+<br/>
 [ ] Build Database using EF Core DB First Approach
-
+<br/>
 [ ] Build Domain
-
+<br/>
 [ ] Build WebAPI
-
+<br/>
 [ ] Build Frontend
+
+<br />
+<br />
+<br />
+<br />
 
 
 > Made with ❤️ by [San Linn Phyo](https://github.com/devsanlphyo)…
