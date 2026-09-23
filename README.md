@@ -65,7 +65,7 @@ flowchart TD
     F -->|No| G[Login Page]
     G --> H[End]
     F -->|Yes| I[Save]
-    I --> H																												end
+    I --> H																												
 ```
 
 
@@ -81,7 +81,7 @@ flowchart TD
     F -->|No| G[Login Page]
     G --> H[End]
     F -->|Yes| I[Create Recipe]
-    I --> H																												end
+    I --> H																												
 ```
 
 
