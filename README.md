@@ -10,6 +10,7 @@ Share not only recipes but also loves. Made with ❤️ by [San Linn Phyo](https
 - [How It Is Structured](#how-it-is-structured)
 - [Features](#features)
 - [Process Flows](#process-flows)
+- [Tasks Overview](#tasks-overview)
 
 <h3 id="about">About</h3>
 
@@ -83,6 +84,13 @@ flowchart TD
     F -->|Yes| I[Create Recipe]
     I --> H																												
 ```
+
+<h3 id="tasks-overview">Tasks Overview</h3>
+[ ] Design Entities and ERD
+[ ] Build Database using EF Core DB First Approach
+[ ] Build Domain
+[ ] Build WebAPI
+[ ] Build Frontend
 
 
 > Made with ❤️ by [San Linn Phyo](https://github.com/devsanlphyo)…
