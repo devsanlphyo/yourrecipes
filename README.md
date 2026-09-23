@@ -58,14 +58,19 @@ start -> user -> recipesPage -> recipeDetail -> saveRecipe -> isLoggedIn -> logi
 
 - Share
 
-```bash
-start -> user -> recipesPage -> recipeDetail -> shareRecipe -> isLoggedIn -> loginPage -> end
-																														 |
-																														 V
-																														share
-																														 |
-																														 V
-																														end
+```mermaid
+flowchart LR
+    start([Start]) --> user([User])
+    user --> recipesPage[Recipes Page]
+    recipesPage --> recipeDetail[Recipe Detail]
+    recipeDetail --> shareRecipe[Share Recipe]
+    shareRecipe --> isLoggedIn{Is Logged In?}
+
+    isLoggedIn -->|No| loginPage[Login Page]
+    loginPage --> endNode([End])
+
+    isLoggedIn -->|Yes| share[Share]
+    share --> endNode																													end
 ```
 
 > Made with ❤️ by San Linn Phyo…
