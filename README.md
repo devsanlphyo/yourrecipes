@@ -1,17 +1,21 @@
-Share not only recipes but also loves. Made with ❤️ by San Linn Phyo.
+
+<img src="./logo.jpg" alt="YourRecipes" width="100" height="100" style="border-radius: 1rem;">
+
+
+Share not only recipes but also loves. Made with ❤️ by [San Linn Phyo](https://github.com/devsanlphyo).
 
 ### Overview
 
-- About
-- How It Is Structured
-- Features
-- Process Flows
+- [About](#about)
+- [How It Is Structured](#how-it-is-structured)
+- [Features](#features)
+- [Process Flows](#process-flows)
 
-### About
+<h3 id="about">About</h3>
 
 YourRecipes (YR) is a recipe sharing website. It has a lot of recipes that you would like and you can share your favorite recipes too. Browse, save and share.
 
-### How It Is Structured
+<h3 id="how-it-is-structured">How It Is Structured</h3>
 
 NextJs is used to built Frontend while powering backend by ASP.NET Core Web API.
 
@@ -23,7 +27,7 @@ YourRecipes/
 |----------- YourRecipes.Website
 ```
 
-### Features
+<h3 id="features">Features</h3>
 
 - **Recipe Sharing**
 Users can create and share their favorite recipes with the community.
@@ -36,50 +40,50 @@ View ingredients, instructions, preparation time, cooking time, servings, and ot
 - **User Accounts**
 Users can create an account and manage their own recipes and saved recipes.
 
-### Process Flows
+<h3 id="process-flows">Process Flows</h3>
 
 - Browse
 
-```bash
-start -> user -> recipesPage -> recipeDetail -> end
+```mermaid
+flowchart TD
+    A[Start] --> B[User]
+    B --> C[Recipes Page]
+    C --> D[Recipe Detail]
+    D --> E[End]
 ```
+
 
 - Save
 
-```bash
-start -> user -> recipesPage -> recipeDetail -> saveRecipe -> isLoggedIn -> loginPage -> end
-																														 |
-																														 V
-																														save
-																														 |
-																														 V
-																														end
+```mermaid
+flowchart TD
+    A[Start] --> B[User]
+    B --> C[Recipes Page]
+    C --> D[Recipe Detail]
+    D --> E[Save Recipe]
+    E --> F{Is Logged In?}
+    F -->|No| G[Login Page]
+    G --> H[End]
+    F -->|Yes| I[Save]
+    I --> H																												end
 ```
+
 
 - Share
 
 ```mermaid
 flowchart TD
-    start([Start]) --> user([User])
-    user --> recipesPage[Recipes Page]
-    recipesPage --> recipeDetail[Recipe Detail]
-    recipeDetail --> shareRecipe[Share Recipe]
-    shareRecipe --> isLoggedIn{Is Logged In?}
-
-    isLoggedIn -->|No| loginPage[Login Page]
-    loginPage --> endNode([End])
-
-    isLoggedIn -->|Yes| share[Share]
-    share --> endNode																													end
+    A[Start] --> B[User]
+    B --> C[Recipes Page]
+    C --> D[Recipe Detail]
+    D --> E[Add Recipe]
+    E --> F{Is Logged In?}
+    F -->|No| G[Login Page]
+    G --> H[End]
+    F -->|Yes| I[Create Recipe]
+    I --> H																												end
 ```
 
-```mermaid
-flowchart TD
-    A[Start] --> B(Process)
-    B --> C{Decision}
-    C -->|Yes| D[Success]
-    C -->|No| E[Fail]
-```
 
-> Made with ❤️ by San Linn Phyo…
+> Made with ❤️ by [San Linn Phyo](https://github.com/devsanlphyo)…
 >
