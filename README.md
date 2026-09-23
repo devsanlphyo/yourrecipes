@@ -59,7 +59,7 @@ start -> user -> recipesPage -> recipeDetail -> saveRecipe -> isLoggedIn -> logi
 - Share
 
 ```mermaid
-flowchart LR
+flowchart TD
     start([Start]) --> user([User])
     user --> recipesPage[Recipes Page]
     recipesPage --> recipeDetail[Recipe Detail]
@@ -71,6 +71,14 @@ flowchart LR
 
     isLoggedIn -->|Yes| share[Share]
     share --> endNode																													end
+```
+
+```mermaid
+flowchart TD
+    A[Start] --> B(Process)
+    B --> C{Decision}
+    C -->|Yes| D[Success]
+    C -->|No| E[Fail]
 ```
 
 > Made with ❤️ by San Linn Phyo…
