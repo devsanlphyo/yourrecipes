@@ -87,7 +87,7 @@ flowchart TD
 
 <h3 id="tasks-overview">Tasks Overview</h3>
 
-* [ ] Design Entities and ERD
+* [x] Design Entities and ERD For MVP (Browsing)
 * [ ] Build Database using EF Core DB First Approach
 * [ ] Build Domain
 * [ ] Build WebAPI
